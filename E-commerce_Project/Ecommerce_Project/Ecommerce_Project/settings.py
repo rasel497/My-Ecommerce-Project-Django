@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -44,11 +45,12 @@ INSTALLED_APPS = [
     'crispy_forms',
     'App_Login',
     'App_Shop',
-
-
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+#custom User Model
+AUTH_USER_MODEL ='App_Login'
 
 
 MIDDLEWARE = [
